@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Wigrum', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+}
+
+#root{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+small{
+  font-size: 80%;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+// Flex
+.main-row{
+  display: flex;
+  flex-direction: row;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.page-column{
+  flex: 1 1 50%;
+  width: 50%;
+}
+
+.page-column-bg{
+  background: #F2C4A3;
+}
+
+.justify-right{
+  justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.grow-1{
+  flex-grow: 1;
+}
+
+// Text
+.font-weight-3{
+  font-weight: 300;
+}
+
+.font-weight-4{
+  font-weight: 400;
+}
+
+.font-weight-5{
+  font-weight: 500;
+}
+
+.font-weight-7{
+  font-weight: 700;
+}
+
+.font-weight-9{
+  font-weight: 900;
+}
+
+.text-center{
+  text-align: center;
+}
+
+// Animations
+.slideLeft{
+  animation: .5s slideLeft forwards;
+}
+
+@keyframes slideLeft {
+  0%{
+    left: 100%;
+  }
+
+  100%{
+    left: 0;
+  }
+}
+
+.slideRight{
+  animation: .5s slideRight forwards;
+}
+
+@keyframes slideRight {
+  0%{
+    left: 0;
+  }
+
+  100%{
+    left: 100%;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  #root{
+    //height: auto;
+    overflow-y: auto;
+  }
+  .main-row{
+    //display: block;
+    flex-direction: column;
+  }
+  .page-column{
+    width: 100%;
+  }
+}
+

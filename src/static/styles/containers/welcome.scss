@@ -1,0 +1,95 @@
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 66px;
+  overflow: hidden;
+}
+
+.welcome__title{
+  margin-bottom: 5px;
+}
+
+.welcome__img{
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0 12px;
+}
+
+.welcome__icon{
+  max-width: 256px;
+  margin: 0 auto 53px;
+  img{
+    width: 100%;
+  }
+}
+
+.welcome__bg{
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  width: 697px;
+  z-index: 0;
+  max-height: 300px;
+  text-align: center;
+  transform: translateX(-50%);
+  img{
+    width: auto;
+    height: 100%;
+  }
+}
+
+.welcome__btn{
+
+}
+
+.welcome__decr{
+  max-width: 504px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 36px;
+  p{
+    margin: 0;
+  }
+}
+
+.welcome__decr-title{
+  margin-bottom: 13px;
+}
+
+@media screen and (max-width: 768px){
+  .welcome{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    overflow: inherit;
+  }
+
+  .welcome__title{
+    margin-bottom: 32px;
+  }
+
+  .welcome__img{
+    overflow: hidden;
+  }
+
+  .welcome__icon{
+    max-width: 183px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .welcome__bg{
+
+    top: 12px;
+    left: 50%;
+    width: 363px;
+    height: 153px;
+    transform-origin: center;
+    transform: translateX(-50%);
+  }
+
+  .welcome__decr{
+    display: none;
+  }
+}

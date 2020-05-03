@@ -1,0 +1,64 @@
+.profile-list__item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-list__avatar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 142px;
+  width: 100%;
+  padding: 9px 12px;
+  background: #ECEDF0;
+  border-bottom: 2px solid #F2C4A3;
+}
+
+.profile-list__user-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  flex: 1;
+}
+
+.profile-list__username{
+  padding: 0 15px 0 0;
+  font-size: 16px;
+  line-height: 24px;
+
+  flex-shrink: 0;
+}
+
+.profile-list__email{
+  width: 200px;
+  overflow: hidden;
+  text-align: right;
+  small{
+    display: block;
+  }
+  a{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #CD845C;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .profile-list__user-info{
+    flex-wrap: wrap;
+  }
+
+  .profile-list__email{
+    text-align: left;
+    width: 180px;
+    small{
+      display: none;
+    }
+  }
+}
